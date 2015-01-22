@@ -21,6 +21,15 @@
     </global>
 
     <adminhtml>
+
+        <layout>
+            <updates>
+                <theextensionlab_multiselectfilters>
+                    <file>theextensionlab/multiselectfilters.xml</file>
+                </theextensionlab_multiselectfilters>
+            </updates>
+        </layout>
+
         <events>
             <core_block_abstract_to_html_before>
                 <observers>
@@ -30,6 +39,15 @@
                     </theextensionlab_multiselectfilters>
                 </observers>
             </core_block_abstract_to_html_before>
+
+            <core_block_abstract_to_html_after>
+                <observers>
+                    <theextensionlab_multiselectfilters>
+                        <class>theextensionlab_multiselectfilters/observer</class>
+                        <method>coreBlockAbstractToHtmlAfter</method>
+                    </theextensionlab_multiselectfilters>
+                </observers>
+            </core_block_abstract_to_html_after>
         </events>
     </adminhtml>
 

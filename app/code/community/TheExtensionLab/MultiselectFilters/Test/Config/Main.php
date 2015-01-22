@@ -15,4 +15,10 @@
             'coreBlockAbstractToHtmlBefore'
         );
     }
+
+    public function testLayoutConfig()
+    {
+        $this->assertLayoutFileDefined('adminhtml','theextensionlab/multiselectfilters.xml');
+        $this->assertLayoutFileExists('adminhtml','theextensionlab/multiselectfilters.xml');
+    }
 }

@@ -35,7 +35,7 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
 {
     protected function _getOptions()
     {
-        $emptyOption = array('value' => null, 'label' => '');
+//        $emptyOption = array('value' => null, 'label' => '');
 
         $optionGroups = $this->getColumn()->getOptionGroups();
         if ($optionGroups) {
@@ -45,7 +45,7 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
 
         $colOptions = $this->getColumn()->getOptions();
         if (!empty($colOptions) && is_array($colOptions) ) {
-            $options = array($emptyOption);
+//            $options = array($emptyOption);
             foreach ($colOptions as $value => $label) {
                 $options[] = array('value' => $value, 'label' => $label);
             }
@@ -71,7 +71,7 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
     {
         $values = $this->getValue();
         $explodedValues = explode(',',$values);
-        $html = '<select name="'.$this->_getHtmlName().'" id="'.$this->_getHtmlId().'" class="no-changes" multiple>';
+        $html = '<select name="'.$this->_getHtmlName().'" id="'.$this->_getHtmlId().'" class="no-changes" data-placeholder="'.$this->_getHtmlName().'" multiple>';
 
         foreach ($this->_getOptions() as $option){
             if (is_array($option['value'])) {

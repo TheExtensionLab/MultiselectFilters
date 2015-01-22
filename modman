@@ -1,2 +1,6 @@
 app/etc/modules/TheExtensionLab_MultiselectFilters.xml  app/etc/modules/TheExtensionLab_MultiselectFilters.xml
 app/code/community/TheExtensionLab/MultiselectFilters/  app/code/community/TheExtensionLab/MultiselectFilters/
+js/theextensionlab/multiselectfilters/chosen/   js/theextensionlab/multiselectfilters/chosen/
+skin/adminhtml/default/default/theextensionlab/multiselectfilters/chosen/   skin/adminhtml/default/default/theextensionlab/multiselectfilters/chosen/
+app/design/adminhtml/default/default/layout/theextensionlab/multiselectfilters.xml  app/design/adminhtml/default/default/layout/theextensionlab/multiselectfilters.xml
+app/design/adminhtml/default/default/template/theextensionlab/multiselectfilters/   app/design/adminhtml/default/default/template/theextensionlab/multiselectfilters/

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config>
+    <default>
+        <reference name="head">
+            <action method="addJs"><file>theextensionlab/multiselectfilters/chosen/simulate.js</file></action>
+            <action method="addJs"><file>theextensionlab/multiselectfilters/chosen/chosen.proto.js</file></action>
+            <action method="addCss"><file>theextensionlab/multiselectfilters/chosen/css/chosen.css</file></action>
+        </reference>
+
+        <!--<reference name="before_body_end">-->
+            <!--<block type="core/template" name="chosen.js" template="theextensionlab/multiselectfilters/chosen/init-js.phtml"/>-->
+        <!--</reference>-->
+    </default>
+
+    <!--<widget_grid_page>-->
+        <!--<block type="adminhtml/template" name="chosen.js" template="theextensionlab/multiselectfilters/chosen/init-ajax-js.phtml" output="toHtml"/>-->
+    <!--</widget_grid_page>-->
+
+    <!--<adminhtml_sales_order_grid>-->
+        <!--<block type="adminhtml/template" name="chosen.js" template="theextensionlab/multiselectfilters/chosen/init-ajax-js.phtml" output="toHtml"/>-->
+    <!--</adminhtml_sales_order_grid>-->
+</config>

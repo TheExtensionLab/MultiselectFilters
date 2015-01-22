@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    //    document.observe('dom:loaded', function(evt) {
+    var config = {
+        '.filter select[multiple],.chosen-select'           : {}
+    }
+    var results = [];
+    for (var selector in config) {
+        var elements = $$(selector);
+        for (var i = 0; i < elements.length; i++) {
+            results.push(new Chosen(elements[i],config[selector]));
+        }
+    }
+    //        return results;
+    //    });
+</script>
