@@ -3,6 +3,7 @@
     public function testClassAsliases()
     {
         $this->assertModelAlias('theextensionlab_multiselectfilters/observer','TheExtensionLab_MultiselectFilters_Model_Observer');
+        $this->assertBlockAlias('theextensionlab_multiselectfilters/example','TheExtensionLab_MultiselectFilters_Block_Example');
     }
 
     public function testObserverConfig()

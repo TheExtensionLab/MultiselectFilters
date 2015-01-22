@@ -7,6 +7,12 @@
     </modules>
 
     <global>
+        <blocks>
+            <theextensionlab_multiselectfilters>
+                <class>TheExtensionLab_MultiselectFilters_Block</class>
+            </theextensionlab_multiselectfilters>
+        </blocks>
+
         <models>
             <theextensionlab_multiselectfilters>
                 <class>TheExtensionLab_MultiselectFilters_Model</class>
