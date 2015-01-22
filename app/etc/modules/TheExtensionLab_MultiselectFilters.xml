@@ -3,7 +3,7 @@
     <modules>
         <TheExtensionLab_MultiselectFilters>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </TheExtensionLab_MultiselectFilters>
     </modules>
 </config>
