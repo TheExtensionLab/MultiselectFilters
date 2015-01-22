@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TheExtensionLab_MultiselectFilters>
+            <active>true</active>
+            <codePool>local</codePool>
+        </TheExtensionLab_MultiselectFilters>
+    </modules>
+</config>
