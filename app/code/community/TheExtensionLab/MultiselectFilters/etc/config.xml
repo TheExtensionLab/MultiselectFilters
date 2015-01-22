@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <phpunit>
+        <suite>
+            <modules>
+                <TheExtensionLab_MultiselectFilters/>
+            </modules>
+        </suite>
+    </phpunit>
+</config>
