@@ -63,25 +63,25 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
      */
     protected function _renderOption($option, $values)
     {
-        $selected = ((in_array($option['value'], $values) && (!is_null($values))) ? ' selected="selected"' : '' );
+        $explodedValues = explode(',',$values);
+        $selected = ((in_array($option['value'], $explodedValues) && (!is_null($explodedValues)) && ($values != "")) ? ' selected="selected"' : '' );
         return '<option value="'. $this->escapeHtml($option['value']).'"'.$selected.'>'.$this->escapeHtml($option['label']).'</option>';
     }
 
     public function getHtml()
     {
         $values = $this->getValue();
-        $explodedValues = explode(',',$values);
-        $html = '<select name="'.$this->_getHtmlName().'" id="'.$this->_getHtmlId().'" class="no-changes" data-placeholder="'.$this->_getHtmlName().'" multiple>';
+        $html = '<select name="'.$this->_getHtmlName().'" id="'.$this->_getHtmlId().'" class="no-changes" data-placeholder="'.$this->__('Click here to filter').'" multiple>';
 
         foreach ($this->_getOptions() as $option){
             if (is_array($option['value'])) {
                 $html .= '<optgroup label="' . $this->escapeHtml($option['label']) . '">';
                 foreach ($option['value'] as $subOption) {
-                    $html .= $this->_renderOption($subOption, $explodedValues);
+                    $html .= $this->_renderOption($subOption, $values);
                 }
                 $html .= '</optgroup>';
             } else {
-                $html .= $this->_renderOption($option, $explodedValues);
+                $html .= $this->_renderOption($option, $values);
             }
         }
         $html.='</select>';
