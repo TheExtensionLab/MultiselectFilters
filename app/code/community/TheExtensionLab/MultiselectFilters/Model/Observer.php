@@ -8,6 +8,7 @@
         if ($block instanceof Mage_Adminhtml_Block_Widget_Grid) {
             $filters = array();
             $filters['options'] = "theextensionlab_multiselectfilters/adminhtml_widget_grid_column_filter_multiselect";
+            $filters['country'] = "theextensionlab_multiselectfilters/adminhtml_widget_grid_column_filter_multiselect_country";
             $block->setColumnFilters($filters);
         }
     }
