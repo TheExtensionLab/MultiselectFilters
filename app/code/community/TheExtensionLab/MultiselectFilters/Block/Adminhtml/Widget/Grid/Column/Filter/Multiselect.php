@@ -35,8 +35,6 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
 {
     protected function _getOptions()
     {
-//        $emptyOption = array('value' => null, 'label' => '');
-
         $optionGroups = $this->getColumn()->getOptionGroups();
         if ($optionGroups) {
             array_unshift($optionGroups, $emptyOption);
@@ -45,7 +43,6 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
 
         $colOptions = $this->getColumn()->getOptions();
         if (!empty($colOptions) && is_array($colOptions) ) {
-//            $options = array($emptyOption);
             foreach ($colOptions as $value => $label) {
                 $options[] = array('value' => $value, 'label' => $label);
             }
