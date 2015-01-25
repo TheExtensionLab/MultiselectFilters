@@ -1,6 +1,6 @@
 <script type="text/javascript">
     var config = {
-        '.filter select[multiple],.chosen-select'           : {}
+        '.<?php echo $this->getUniqId() ?> .filter select[multiple],.chosen-select'           : {}
     }
     var results = [];
     for (var selector in config) {

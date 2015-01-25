@@ -22,11 +22,14 @@
             //get the HTML
             $html = $transport->getHtml();
 
+            //Get container so that js is only fired on this grid
+            $uniqIdClass = 'grid-container-'.uniqid();
+
             //render the block
             $newHtml = $block->getLayout()->createBlock('adminhtml/template')
-                ->setTemplate('theextensionlab/multiselectfilters/chosen/init-js.phtml')->toHtml();
+                ->setTemplate('theextensionlab/multiselectfilters/chosen/init-js.phtml')->setUniqId($uniqIdClass)->toHtml();
 
-            $transport->setHtml($html.' '.$newHtml);
+            $transport->setHtml('<div class="'.$uniqIdClass.'">'.$html.' '.$newHtml.'</div>');
         }
     }
 }
