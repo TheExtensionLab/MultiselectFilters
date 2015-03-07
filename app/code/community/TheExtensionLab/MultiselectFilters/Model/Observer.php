@@ -1,4 +1,14 @@
-<?php class TheExtensionLab_MultiselectFilters_Model_Observer
+<?php 
+/**
+ * MultiselectFilters Observer Model
+ *
+ * @category    TheExtensionLab
+ * @package     TheExtensionLab_MultiselectFilters
+ * @copyright   Copyright (c) TheExtensionLab (http://www.theextensionlab.com)
+ * @license     Open Software License (OSL 3.0)
+ * @author      James Anelay @ TheExtensionLab <james@theextensionlab.com>
+ */
+class TheExtensionLab_MultiselectFilters_Model_Observer
 {
     //getColumnFilters
     public function coreBlockAbstractToHtmlBefore(Varien_Event_Observer $observer)
