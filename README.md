@@ -1,4 +1,4 @@
-# StatusColors
+# Multiselect Filters
 Adds multi-select filters to backend grid in Magento and makes them more user friendly with chosen.js.
 
 Compatibility
@@ -9,9 +9,9 @@ Extension Overview
 ------------------
 Modman: Yes
 
-Composer: Not yet
+Composer: Yes
 
-GitHub: Private
+GitHub: Public :)
 
 Core Hacks: 0
 
