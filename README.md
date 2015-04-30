@@ -1,4 +1,6 @@
 # Multiselect Filters
+
+[![Join the chat at https://gitter.im/TheExtensionLab/MultiselectFilters](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/TheExtensionLab/MultiselectFilters?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Adds multi-select filters to backend grid in Magento and makes them more user friendly with chosen.js.
 
 Compatibility
