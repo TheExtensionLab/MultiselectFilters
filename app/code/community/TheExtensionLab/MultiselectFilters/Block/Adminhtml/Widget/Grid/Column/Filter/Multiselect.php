@@ -14,7 +14,7 @@ class TheExtensionLab_MultiselectFilters_Block_Adminhtml_Widget_Grid_Column_Filt
     {
         $optionGroups = $this->getColumn()->getOptionGroups();
         if ($optionGroups) {
-            array_unshift($optionGroups, $emptyOption);
+            array_unshift($optionGroups, null);
             return $optionGroups;
         }
 
