@@ -10,7 +10,7 @@
 <config>
     <modules>
         <TheExtensionLab_MultiselectFilters>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
         </TheExtensionLab_MultiselectFilters>
     </modules>
 
