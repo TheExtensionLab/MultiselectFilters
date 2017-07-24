@@ -54,4 +54,4 @@
         return element;
     }
     Element.addMethods({ simulate: Event.simulate });
-})()
+})();
